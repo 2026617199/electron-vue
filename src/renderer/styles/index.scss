@@ -1,0 +1,63 @@
+/*
+ * @license     Commercial Source License v1.0
+ * @author      前端飞行手册 <frontpilot@163.com>
+ * @homepage    https://frontpilot.cn/
+ * @copyright   Copyright (c) 2026 前端飞行手册. All rights reserved.
+ *
+ * You may NOT redistribute, resell, sublicense, or publish this source code.
+ * See LICENSE file in the project root for full license terms.
+ */
+@use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
+// 自定义主题
+@use './themes/index.scss';
+@use './transition.scss';
+@use './common.scss';
+@use './flex.scss';
+
+#app {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  // background: var(--app-background-image) center no-repeat;
+  background-size: cover;
+  transition: background-color 0.4s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+// 暗黑模式动画
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 2147483646;
+}
+.dark::view-transition-old(root) {
+  z-index: 2147483646;
+}
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+:root {
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--vp-c-brand) 30%, var(--vp-c-brand-next));
+  --vp-c-brand: #00a98e;
+  --vp-c-brand-light: #4ad1b4;
+  --vp-c-brand-lighter: #78fadc;
+  --vp-c-brand-dark: #008269;
+  --vp-c-brand-darker: #005d47;
+  --vp-c-brand-next: #009ff7;
+  animation: rainbow 40s linear infinite;
+}

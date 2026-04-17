@@ -1,0 +1,19 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "outDir": "../dist/renderer",
+        "rootDir": ".",
+        "esModuleInterop": true,
+        "types": ["vite/client"],
+        "useDefineForClassFields": true,
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+    },
+    "include": [
+        "./**/*.ts",
+        "./vite-env.d.ts",
+        "./**/*.vue",
+    ]
+}

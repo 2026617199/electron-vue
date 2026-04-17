@@ -1,0 +1,39 @@
+// 通用样式类
+.pointer {
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+
+/** 自定义滚动条样式 **/
+$scrollbar-track-color: transparent;
+
+.pretty-scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $scrollbar-track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    border-radius: 3px;
+  }
+}

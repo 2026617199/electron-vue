@@ -1,0 +1,58 @@
+@use '../mixins.scss';
+
+$--colors: (
+  "primary": (
+    "base": #6366f1,
+  ),
+  "success": (
+    "base": #21ba45,
+  ),
+  "warning": (
+    "base": #f2711c,
+  ),
+  "danger": (
+    "base": #db2828,
+  ),
+  "error": (
+    "base": #db2828,
+  ),
+  "info": (
+    "base": #42b8dd,
+  ),
+);
+
+// we can add this to custom namespace, default is 'el'
+@forward "element-plus/theme-chalk/src/mixins/config.scss" with (
+  $namespace: "ep"
+);
+
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+// https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $menu: (
+    // 'active-color': #ffffffcc,
+    // 'text-color': #ffffffcc,--app-color-foreground-violet
+    // 'hover-text-color': #ffffffcc,
+    // 'hover-bg-color': getCssVar('color', 'foreground-violet'),
+    'item-height': 40px,
+  ),
+  $card: (
+    'padding': 10px
+  )
+);
+
+// if you want to import all
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+// You can comment it to hide debug info.
+// @debug $--colors;
+
+// custom dark variables
+@use "./dark.scss";
+
+// 设置背景色
+:deep(.ep-card), :deep(.ep-tabs) {
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+}

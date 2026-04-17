@@ -1,0 +1,61 @@
+// 菜单栏
+$app-siderbar-width: 72px;
+$app-siderbar-min-width: 50px;
+
+$app-siderbar-hover-color: #E8F3FF;
+$app-siderbar-active-color: #4F8DFF;
+
+
+// 配置主题色、布局长宽、背景色
+$font-color-red: rgb(240, 11, 11);
+$base-transition: all 0.5s;
+// $base-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border 0s;
+
+
+
+// 布局相关样式
+$siderBarWidth: 200px;
+
+
+// 全局应用样式变量
+// :root {
+//   // 颜色
+
+//   // 布局
+//   --content-padding: 14px;
+//   // 重新整理
+//   // 配色-蓝
+//   --app-color-foreground-blue: #54c8fa;
+//   --app-color-foreground-violet: #be1cfa;
+//   --app-color-gradient-blue: linear-gradient(130deg,var(--app-color-foreground-blue) 30%,var(--app-color-foreground-violet) 70%);
+//   // 配色-绿
+//   --app-color-foreground-light-green: #79dc1e;
+//   --app-color-foreground-weight-green: #1abfca;
+//   --app-color-gradient-green: linear-gradient(130deg,var(--app-color-foreground-light-green) 30%,var(--app-color-foreground-weight-green) 70%);
+//   // 配色-红
+//   --app-color-foreground-red: #ff0000;
+//   --app-color-foreground-yellow: #ffae01;
+//   --app-color-gradient-red: linear-gradient(130deg,var(--app-color-foreground-red) 30%,var(--app-color-foreground-yellow) 70%);
+//   // 背景色
+//   --app-background-image: none;
+//   // 总
+//   --app-color-gradient: var(--app-color-gradient-blue);
+//   // 测试
+//   --endColorFirst: rgba(182,81,200,.35);
+//   --endColorSecond: rgba(138,212,255,.35);
+//   --vp-home-hero-image-background-image: linear-gradient( -45deg, var(--vp-c-brand-1) 30%, var(--vp-c-brand-next) );
+//   --vp-home-hero-image-filter: blur(120px);
+// }
+
+:root {
+  // 滚动条颜色
+  --scrollbar-thumb-color: var(--gray);
+  // --scrollbar-thumb-color: #d8d8d8;
+  
+  // 暗色模式下的值
+  &.dark {
+    // --scrollbar-thumb-color: var(--gray);
+    --scrollbar-thumb-color: #353535;
+  }
+}
+
