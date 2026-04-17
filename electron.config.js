@@ -9,8 +9,8 @@ module.exports = {
   },
   publish: {
     provider: "github",
-    owner: "YOUR_GITHUB_USERNAME",
-    repo: "YOUR_REPO_NAME"
+    owner: "2026617199",
+    repo: "electron-vue"
   },
   files: [
     'dist',
