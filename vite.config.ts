@@ -21,7 +21,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
-import electronBytenodePlugin from './build/bytenode/vite-plugin-electron-encrypt'
+import electronBytenodePlugin from './build/bytenode/vite-plugin-electron-encrypt.ts'
 
 import * as path from 'path'
 import pkg from './package.json' assert { type: 'json' }
