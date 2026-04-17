@@ -108,9 +108,9 @@ class CustomProtocol {
     });
     // {
     // isDevMode: true,
-    // execPath: 'E:\\repository\\electron-vue-application\\node_modules\\electron\\dist\\electron.exe'
+    // execPath: 'E:\\repository\\electron-vue\\node_modules\\electron\\dist\\electron.exe'
     // argv: [
-    //   'E:\\repository\\electron-vue-application\\node_modules\\electron\\dist\\electron.exe',
+    //   'E:\\repository\\electron-vue\\node_modules\\electron\\dist\\electron.exe',
     //   '.',
     //   '--no-sandbox'
     // ],

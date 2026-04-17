@@ -236,7 +236,7 @@ windowList.set(WINDOW_ROUTE_NAME.LOADING_WINDOW, {
     }
   },
   callback(window: any) {
-    // error: Not allowed to load local resource: file:///E:/repository/electron-vue-application/release/0.0.0/win-unpacked/resources/app.asar/resources/loading2.html
+    // error: Not allowed to load local resource: file:///E:/repository/electron-vue/release/0.0.0/win-unpacked/resources/app.asar/resources/loading2.html
     const loadingUrl = `file://${join(__dirname, "../../resources/loading.html")}`
     window.loadURL(loadingUrl)
     window.show()
