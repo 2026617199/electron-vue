@@ -7,11 +7,8 @@ module.exports = {
     output: "release/${version}",
     buildResources: "build"
   },
-  publish: {
-    provider: "github",
-    owner: "2026617199",
-    repo: "electron-vue"
-  },
+  // 构建时不发布，由 GitHub Action 负责发布
+  publish: null,
   files: [
     'dist',
     'dist-electron',
